@@ -62,7 +62,7 @@ func oauthGoogleCallback(w http.ResponseWriter, r *http.Request) {
 }
 
 func generateStateOauthCookie(w http.ResponseWriter) string {
-	var expiration = time.Now().Add(365 * 24 * time.Hour)
+	var expiration = time.Now().Add(20 * time.Minute)
 
 	b := make([]byte, 16)
 	rand.Read(b)
