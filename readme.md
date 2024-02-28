@@ -1,4 +1,5 @@
 # Oauth2-example with Go
+## Read the article in my blog [here](https://www.kungfudev.com/blog/2018/07/10/oauth2-example-with-go).
 Authentication is the most common part in any application. You can implement your own authentication system or use one of the many alternatives that exist, but in this case we are going to use OAuth2.
 
 OAuth is a specification that allows users to delegate access to their data without sharing
@@ -20,7 +21,7 @@ The authorization sequence begins when your application redirects the browser to
 
 The application should store the refresh token for future use and use the access token to access a Google API. Once the access token expires, the application uses the refresh token to obtain a new one.
 
-![Oauth2Google](https://developers.google.com/accounts/images/webflow.png)
+![Oauth2Google](https://www.kungfudev.com/images/blog/authorization-code.png)
 
 ## Let's go to the code
 We will use the package "golang.org/x/oauth2" that provides support for making OAuth2 authorized and authenticated HTTP requests.
